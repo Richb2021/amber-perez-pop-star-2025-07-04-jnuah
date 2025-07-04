@@ -20,32 +20,42 @@
         html {
             scroll-behavior: smooth;
         }
+
+        @keyframes gradient-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-bg 8s ease infinite;
+        }
     </style>
 </head>
-<body class="font-['Poppins'] antialiased bg-white">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+<body class="font-['Poppins'] antialiased bg-black text-white">
+    <header class="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <a href="https://Richb2021.github.io/amber-perez-pop-star-2025-07-04-jnuah" class="text-2xl font-bold bg-gradient-to-r from-fuchsia-600 to-rose-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Amber Perez
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#music" class="text-gray-600 hover:text-fuchsia-600 hover:scale-105 transition-all duration-300">Music</a>
-                    <a href="#about" class="text-gray-600 hover:text-fuchsia-600 hover:scale-105 transition-all duration-300">About</a>
-                    <a href="#testimonials" class="text-gray-600 hover:text-fuchsia-600 hover:scale-105 transition-all duration-300">Testimonials</a>
-                    <a href="#faq" class="text-gray-600 hover:text-fuchsia-600 hover:scale-105 transition-all duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-600 hover:text-fuchsia-600 hover:scale-105 transition-all duration-300">Contact</a>
+                    <a href="#music" class="text-pink-300 hover:text-pink-500 hover:scale-105 transition-all duration-300">Music</a>
+                    <a href="#about" class="text-pink-300 hover:text-pink-500 hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#testimonials" class="text-pink-300 hover:text-pink-500 hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#faq" class="text-pink-300 hover:text-pink-500 hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-pink-300 hover:text-pink-500 hover:scale-105 transition-all duration-300">Contact</a>
                 </div>
-                <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
+                <button class="mobile-menu-button md:hidden text-gray-300" aria-label="Toggle mobile menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg">
-                <a href="#music" class="block px-4 py-2 text-gray-600 hover:bg-fuchsia-50 hover:text-fuchsia-600">Music</a>
-                <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-fuchsia-50 hover:text-fuchsia-600">About</a>
-                <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-fuchsia-50 hover:text-fuchsia-600">Testimonials</a>
-                <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-fuchsia-50 hover:text-fuchsia-600">FAQ</a>
-                <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-fuchsia-50 hover:text-fuchsia-600">Contact</a>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-black rounded-lg shadow-lg">
+                <a href="#music" class="block px-4 py-2 text-pink-300 hover:bg-pink-700 hover:text-white">Music</a>
+                <a href="#about" class="block px-4 py-2 text-pink-300 hover:bg-pink-700 hover:text-white">About</a>
+                <a href="#testimonials" class="block px-4 py-2 text-pink-300 hover:bg-pink-700 hover:text-white">Testimonials</a>
+                <a href="#faq" class="block px-4 py-2 text-pink-300 hover:bg-pink-700 hover:text-white">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 text-pink-300 hover:bg-pink-700 hover:text-white">Contact</a>
             </div>
         </nav>
     </header>
@@ -53,13 +63,13 @@
     <main>
         <section class="pt-32 pb-24 relative overflow-hidden">
             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-10"></div>
-            <div class="absolute inset-0 bg-gradient-to-br from-fuchsia-100 to-rose-50 opacity-50"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-fuchsia-500 via-purple-500 to-rose-500 opacity-50 animate-gradient"></div>
             <div class="container mx-auto px-6 relative">
                 <div class="text-center max-w-4xl mx-auto">
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-fuchsia-600 to-rose-500 bg-clip-text text-transparent">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-fuchsia-600 to-rose-500 bg-clip-text text-transparent animate-gradient">
                         Welcome To Amber Perez's World
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-600 mb-12">Redefining pop music with chart-topping hits and electrifying performances</p>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Redefining pop music with chart-topping hits and electrifying performances</p>
                     <a href="https://amberperez.com" class="inline-block px-8 py-4 bg-gradient-to-r from-fuchsia-600 to-rose-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                         Experience The Music
                     </a>
@@ -67,31 +77,31 @@
             </div>
         </section>
 
-        <section class="py-24 bg-white" id="music">
+        <section class="py-24 bg-black" id="music">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-16">Latest Releases</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-102 transition-all duration-300 overflow-hidden">
+                    <div class="bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-102 transition-all duration-300 overflow-hidden">
                         <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-fuchsia-200 to-rose-100"></div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-3">Chart-Topping Singles</h3>
-                            <p class="text-gray-600 mb-4">Experience Amber's newest hits that are dominating the Billboard charts and streaming platforms worldwide.</p>
+                            <p class="text-gray-300 mb-4">Experience Amber's newest hits that are dominating the Billboard charts and streaming platforms worldwide.</p>
                             <a href="#" class="text-fuchsia-600 font-semibold hover:text-fuchsia-700 group">Listen Now <span class="group-hover:translate-x-1 inline-block transition-transform duration-300">→</span></a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-102 transition-all duration-300 overflow-hidden">
+                    <div class="bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-102 transition-all duration-300 overflow-hidden">
                         <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-fuchsia-200 to-rose-100"></div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-3">Platinum Albums</h3>
-                            <p class="text-gray-600 mb-4">Dive into complete collections of award-winning albums that showcase Amber's musical evolution and artistry.</p>
+                            <p class="text-gray-300 mb-4">Dive into complete collections of award-winning albums that showcase Amber's musical evolution and artistry.</p>
                             <a href="#" class="text-fuchsia-600 font-semibold hover:text-fuchsia-700 group">Explore Albums <span class="group-hover:translate-x-1 inline-block transition-transform duration-300">→</span></a>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-102 transition-all duration-300 overflow-hidden">
+                    <div class="bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-102 transition-all duration-300 overflow-hidden">
                         <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-fuchsia-200 to-rose-100"></div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-3">Exclusive Music Videos</h3>
-                            <p class="text-gray-600 mb-4">Watch stunning visuals and behind-the-scenes footage from Amber's latest music video productions.</p>
+                            <p class="text-gray-300 mb-4">Watch stunning visuals and behind-the-scenes footage from Amber's latest music video productions.</p>
                             <a href="#" class="text-fuchsia-600 font-semibold hover:text-fuchsia-700 group">Watch Now <span class="group-hover:translate-x-1 inline-block transition-transform duration-300">→</span></a>
                         </div>
                     </div>
@@ -99,11 +109,11 @@
             </div>
         </section>
 
-        <section class="py-24 bg-gradient-to-br from-fuchsia-50 to-rose-50" id="about">
+        <section class="py-24 bg-gradient-to-br from-purple-800 via-pink-700 to-purple-800 animate-gradient" id="about">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto">
                     <h2 class="text-4xl font-bold mb-12 text-center">About Amber Perez</h2>
-                    <div class="space-y-8 text-lg text-gray-700">
+                    <div class="space-y-8 text-lg text-gray-300">
                         <p>Founded in 2020, Amber Perez burst onto the music scene with her groundbreaking debut single "Starlight Dreams." From humble beginnings in her hometown studio to selling out major venues worldwide, Amber's journey represents the power of raw talent combined with unwavering determination. Her unique blend of pop, electronic, and R&B elements has revolutionized the modern music landscape.</p>
                         <p>Our mission is to create transformative musical experiences that connect people across cultures and boundaries. We believe in the power of authentic artistic expression and are committed to pushing creative boundaries while staying true to our core values of innovation, inclusivity, and artistic integrity. Through music, we aim to inspire the next generation of artists and create positive change in the world.</p>
                     </div>
@@ -111,11 +121,11 @@
             </div>
         </section>
 
-        <section class="py-24 bg-white" id="testimonials">
+        <section class="py-24 bg-black" id="testimonials">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-16">What Fans Are Saying</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                         <div class="flex text-yellow-400 mb-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -123,11 +133,11 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-4">"Amber's latest album completely transformed my playlist! Her unique sound and powerful vocals are unmatched in today's pop scene. I've been to three of her concerts this year alone."</p>
+                        <p class="text-gray-300 mb-4">"Amber's latest album completely transformed my playlist! Her unique sound and powerful vocals are unmatched in today's pop scene. I've been to three of her concerts this year alone."</p>
                         <div class="font-semibold">Sarah Johnson</div>
-                        <div class="text-sm text-gray-500">Music Blogger, Soundwave Magazine</div>
+                        <div class="text-sm text-gray-400">Music Blogger, Soundwave Magazine</div>
                     </div>
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                         <div class="flex text-yellow-400 mb-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -135,11 +145,11 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-4">"The production quality and emotional depth in her music is incredible. Each track tells a unique story while maintaining that signature Amber Perez sound we all love."</p>
+                        <p class="text-gray-300 mb-4">"The production quality and emotional depth in her music is incredible. Each track tells a unique story while maintaining that signature Amber Perez sound we all love."</p>
                         <div class="font-semibold">Michael Chen</div>
-                        <div class="text-sm text-gray-500">Music Producer, Rhythm Studios</div>
+                        <div class="text-sm text-gray-400">Music Producer, Rhythm Studios</div>
                     </div>
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                         <div class="flex text-yellow-400 mb-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -147,11 +157,11 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-4">"I've been following Amber since her first single, and the growth is phenomenal. Her music has helped me through tough times and celebrated my best moments."</p>
+                        <p class="text-gray-300 mb-4">"I've been following Amber since her first single, and the growth is phenomenal. Her music has helped me through tough times and celebrated my best moments."</p>
                         <div class="font-semibold">Emma Thompson</div>
-                        <div class="text-sm text-gray-500">Dedicated Fan</div>
+                        <div class="text-sm text-gray-400">Dedicated Fan</div>
                     </div>
-                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
                         <div class="flex text-yellow-400 mb-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -159,47 +169,47 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 mb-4">"As a venue owner, I've hosted countless artists, but Amber's performances consistently sell out and leave the audience wanting more. Her stage presence is electric!"</p>
+                        <p class="text-gray-300 mb-4">"As a venue owner, I've hosted countless artists, but Amber's performances consistently sell out and leave the audience wanting more. Her stage presence is electric!"</p>
                         <div class="font-semibold">David Rodriguez</div>
-                        <div class="text-sm text-gray-500">Owner, Stellar Arena</div>
+                        <div class="text-sm text-gray-400">Owner, Stellar Arena</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-gradient-to-br from-fuchsia-50 to-rose-50" id="faq">
+        <section class="py-24 bg-gradient-to-br from-purple-800 via-pink-700 to-purple-800 animate-gradient" id="faq">
             <div class="container mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-8">
                     <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-3">When is Amber's next tour?</h3>
-                        <p class="text-gray-600">The upcoming world tour dates will be announced soon! Sign up for our newsletter to be the first to know about ticket sales and VIP packages.</p>
+                        <p class="text-gray-300">The upcoming world tour dates will be announced soon! Sign up for our newsletter to be the first to know about ticket sales and VIP packages.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-3">How can I book Amber for an event?</h3>
-                        <p class="text-gray-600">For booking inquiries, please contact our management team through the contact form below or email booking@amberperez.com.</p>
+                        <p class="text-gray-300">For booking inquiries, please contact our management team through the contact form below or email booking@amberperez.com.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-3">Where can I find official merchandise?</h3>
-                        <p class="text-gray-600">Official merchandise is available exclusively through our online store and at concert venues during live performances.</p>
+                        <p class="text-gray-300">Official merchandise is available exclusively through our online store and at concert venues during live performances.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-3">How can I join the fan club?</h3>
-                        <p class="text-gray-600">Join our official fan club through the website to get exclusive content, pre-sale access, and special member-only experiences.</p>
+                        <p class="text-gray-300">Join our official fan club through the website to get exclusive content, pre-sale access, and special member-only experiences.</p>
                     </div>
                     <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-3">What platforms stream Amber's music?</h3>
-                        <p class="text-gray-600">Amber's music is available on all major streaming platforms including Spotify, Apple Music, Amazon Music, and YouTube Music.</p>
+                        <p class="text-gray-300">Amber's music is available on all major streaming platforms including Spotify, Apple Music, Amazon Music, and YouTube Music.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-white" id="contact">
+        <section class="py-24 bg-black" id="contact">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto text-center">
                     <h2 class="text-4xl font-bold mb-8">Connect With Us</h2>
-                    <p class="text-xl text-gray-600 mb-12">Ready to collaborate or have questions? We'd love to hear from you!</p>
+                    <p class="text-xl text-gray-300 mb-12">Ready to collaborate or have questions? We'd love to hear from you!</p>
                     <a href="mailto:amber@amberperez.com" class="text-xl text-fuchsia-600 hover:text-fuchsia-700 font-semibold hover:scale-105 transition-all duration-300 inline-block">
                         amber@amberperez.com
                     </a>
